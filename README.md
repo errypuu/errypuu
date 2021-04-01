@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @errypuu
+- 👀 Looking for a new challenge
+- 🌱 Still learning to code
