@@ -1,53 +1,46 @@
-<!-- errypuu/errypuu — profile README. Keep the links real; the projects below are
-     the ones that actually exist on this account. -->
+<!-- errypuu/errypuu. Keep the links honest; these are the projects that actually
+     exist on this account. -->
 <picture>
-  <img src="banner.png" alt="erry darajati — infrastructure and IT support" width="100%">
+  <img src="banner.png" alt="erry darajati, infrastructure and IT support" width="100%">
 </picture>
 
 # Erry Pradana Darajati
 
-**Infrastructure & IT Support Engineer** — Sidoarjo, Indonesia
+Infrastructure & IT support engineer, Sidoarjo, Indonesia.
 
-I keep Windows Server fleets, Hyper-V hosts and Azure tenants running for US-based
-clients through Wowrack. Seven years of nights where the pager goes off, the box has
-to come back, and nobody cares how clever the fix was — only that it held.
+My day job is keeping Windows Server, Hyper-V and Azure running for US clients at
+Wowrack. I started as junior sysadmin in 2018, took over the Windows side in 2020,
+and between 2023 and 2024 taught cloud computing to people who were changing careers
+into it.
 
-Outside the day job I run a homelab that is honestly too big: Proxmox with a handful
-of LXC containers, a Docker host behind a reverse proxy, Pi-hole and AdGuard for DNS,
-NetBird for the mesh, and a pile of self-hosted services I actually use instead of
-just collecting.
+The homelab started as one Proxmox box and got out of hand. Right now: a few LXC
+containers, a Docker host behind a reverse proxy, Pi-hole and AdGuard sharing DNS
+duties, NetBird for the mesh, and the usual pile of self-hosted services.
 
----
+### What I actually do
 
-### What I work on
+- Windows Server and AD: domain services, group policy, DNS, DHCP, Hyper-V failover clusters
+- Azure: Entra ID, VM provisioning, conditional access, and watching the cost dashboard
+- Patching. Mostly patching, and explaining afterwards why the wrong node was not the node that rebooted.
+- PowerShell for anything I have had to do twice, Bash and Python when the machine is Linux
+- Compose stacks, nginx, TLS, and backups that have been restored at least once
 
-- **Windows Server / AD** — domain services, GPO, DNS, DHCP, Hyper-V failover clusters, and patching that does not reboot the wrong node
-- **Azure** — Entra ID, VM provisioning, conditional access, and cost that stays inside the tenant's budget
-- **Automation** — PowerShell for anything done twice; Bash and Python when the target is Linux
-- **Self-hosting** — Compose stacks, nginx and NPM, TLS, backups and restore drills, because a backup nobody restored is a rumour
+### Repos worth a look
 
----
+**[AndroMouse](https://github.com/errypuu/AndroMouse)** moves a Windows mouse and
+keyboard onto an Android tablet over the LAN, without root or wireless ADB. C# tray
+app on the PC, Kotlin accessibility service and IME on the tablet, UDP for pointer
+deltas and TCP for clicks, keys and screenshots.
 
-### Things I have built
+**[SpectreMeltdownMitigation](https://github.com/errypuu/SpectreMeltdownMitigation)**
+is PowerShell that reads Spectre and Meltdown exposure on a Windows fleet, reports it,
+applies the mitigation and checks the result.
 
-**[AndroMouse](https://github.com/errypuu/AndroMouse)** — use a Windows mouse and
-keyboard on an Android tablet over the LAN, no root and no wireless ADB. A C# tray app
-on the PC, a Kotlin accessibility service and IME on the tablet, UDP for mouse deltas
-and TCP for input and clipboard handoff.
+**[SimpleHostedNetworkActivator](https://github.com/errypuu/SimpleHostedNetworkActivator)**
+is from 2016, when I was still in IT support and turning a laptop into a hotspot took
+four dialog boxes.
 
-**[SpectreMeltdownMitigation](https://github.com/errypuu/SpectreMeltdownMitigation)** —
-PowerShell to audit and remediate Spectre/Meltdown exposure on a Windows fleet: read
-the vulnerable state, report it, apply the mitigation, then verify it took.
+Portfolio: <https://erryio.darajati.my.id>
 
-**[SimpleHostedNetworkActivator](https://github.com/errypuu/SimpleHostedNetworkActivator)** —
-a small tool from my first year in IT that turns a Windows machine into a hosted
-network in one click. Kept as a reminder of how far the toolkit has come.
-
----
-
-### Elsewhere
-
-Portfolio and writing: <https://erryio.darajati.my.id>
-
-<sub>Most of the work lives in private repos, in a homelab rack, and in support
-tickets. This page is the part that fits on a README.</sub>
+<sub>The interesting half of the work is in private repos and on a rack at home.
+This is what can be shown in public.</sub>
